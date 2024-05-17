@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/">
+            Enter a name
+            <input type="text" name="name" id="name" placeholder="NAME" required oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+
+            Enter Email
+            <input type="email" name="email" id="email" placeholder="EMAIL" required oninvalid="this.setCustomValidity('Please Enter Your Email')" oninput="this.setCustomValidity('')">
+
+            Enter Password
+            <input type="password" name="password" id="password" placeholder="PASSWORD" required oninvalid="this.setCustomValidity('Please Enter Your Password')" oninput="this.setCustomValidity('')">
+
+            Confirm Password
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required oninvalid="this.setCustomValidity('Enter Confirm Password')" oninput="this.setCustomValidity('')">
+
+            <button class="btn" id="register">Register</button>
+            <a href="login.html">Already Have An Account!</a>
+        </form>
+    </div>
+</body>
+</html>
